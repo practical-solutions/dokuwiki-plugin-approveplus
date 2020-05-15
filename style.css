@@ -1,0 +1,20 @@
+.plugin__approveblock_info {
+    background-color: cornsilk;
+    padding: 1.5em 2em;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    color: crimson;
+}
+
+/* Override the style of the original */
+.plugin__approve_green {
+    background:none;
+    color:lightgray;
+    transition:300ms;
+}
+
+.plugin__approve_green:hover {
+    color:black;
+    background:lightgreen;
+    transition:300ms;
+}
