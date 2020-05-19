@@ -4,7 +4,7 @@
  * 
  * Requires: Approve-Plugin, Sqlite-Plugin
  *
- * @author     Gero Gothe <practical@medizin-lernen.de>
+ * @author: Gero Gothe <practical@medizin-lernen.de>
  * 
  */
 
@@ -15,9 +15,9 @@ if(!defined('DOKU_INC')) die();
 
 
 /**
- * Class action_plugin_approveplus
+ * Class action_plugin_approveplus_draftblock
  */
-class action_plugin_approveplus extends DokuWiki_Action_Plugin {
+class action_plugin_approveplus_draftblock extends DokuWiki_Action_Plugin {
 
     /**
      * Register callbacks
