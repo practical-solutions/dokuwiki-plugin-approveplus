@@ -68,13 +68,12 @@ class action_plugin_approveplus_totalblock extends DokuWiki_Action_Plugin {
 
 
     public function handle_viewer(Doku_Event $event) {
-        
+        global $INFO;
         if ($event->data != 'show') return;
         
-        $id = $event->data['id'];
+        $id = $INFO['id'];
         
         if ($this->blocked($id)){
-            global $INFO;
             
             # Current user hast editing right -> blocking not applied
             if ($INFO['editable']) {
