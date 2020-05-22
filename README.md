@@ -7,13 +7,14 @@ Additional features for the [approve-Plugin](https://www.dokuwiki.org/plugin:app
 
 * Block showing content of pages, which have no approved version
 * Option to completely block pages independently from the approve-system (i.e. making it possible to block pages, which have an approved version)
+* Add dw2pdf template-tag ``@APPROVER@``
 * Style modifications of the original
 
+
 ## Coming up / planned / ideas
-* Config-Option: Show Block/Unblock-Button
-* german translation
-* migration from old plugin
-* add dw2pdf template-tag ``@APPROVER@``
+
+Nothing at present.
+
 
 ## Technical Information
 

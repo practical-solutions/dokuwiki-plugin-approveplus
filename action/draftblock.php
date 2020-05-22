@@ -26,7 +26,7 @@ class action_plugin_approveplus_draftblock extends DokuWiki_Action_Plugin {
 
         $list = plugin_list();
 
-        if (in_array('approve',$list)) { # Hooks nur eintragen, wenn das Approve-Plugin ebenfalls installiert ist	
+        if (in_array('approve',$list) && $this->getConf('block_unapproved')==1) { # Hooks nur eintragen, wenn das Approve-Plugin ebenfalls installiert ist	
             $controller->register_hook('TPL_ACT_RENDER', 'BEFORE', $this, 'handle_viewer');
         }
     }

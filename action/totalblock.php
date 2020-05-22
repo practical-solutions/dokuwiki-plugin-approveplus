@@ -125,7 +125,7 @@ class action_plugin_approveplus_totalblock extends DokuWiki_Action_Plugin {
         
         if (!$INFO['editable']) return;
         
-        if($event->data['view'] != 'page') { # || !$this->getConf('showexportbutton')) {
+        if($event->data['view'] != 'page' || !$this->getConf('show_blockbutton')) {
             return;
         }
 
