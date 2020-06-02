@@ -1,7 +1,7 @@
 ﻿base   approveplus
 author Gero Gothe
 email  practical@medizin-lernen.de
-date   2020-05-22
+date   2020-06-02
 name   Approve Plus
 desc   Adds additional options for the Approve-Plugin (requires Approve-Plugin)
 url    https://github.com/practical-solutions/dokuwiki-plugin-approveplus
