@@ -6,3 +6,6 @@ $lang["msg_blocked2"]      = "Diese Seite ist aktuell <u>blockiert</u>. Nur Nutz
 
 $lang["block_button"]      = "Seite blockieren";
 $lang["unblock_button"]    = "Seitenblockade aufheben";
+
+$lang["approve_text"]      = "Freigabe: ";
+$lang["not_approve_text"]  = "<b>Nicht freigegebene Fassung!</b>";

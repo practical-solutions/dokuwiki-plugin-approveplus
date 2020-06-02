@@ -46,9 +46,11 @@ class action_plugin_approveplus_replacement extends DokuWiki_Action_Plugin {
         $approve = $sqlite->res_fetch_assoc($res);
         
         if ($approve['approved']) {
-            $event->data['replace']['@APPROVER@'] = $approve['approved_by'];
+            global $auth;
+            $data = $auth->getUserData($approve['approved_by']);
+            $event->data['replace']['@APPROVER@'] = $this->getLang('approve_text') . $data['name'];
         } else {
-            $event->data['replace']['@APPROVER@'] = "Unapproved Version";
+            $event->data['replace']['@APPROVER@'] = $this->getLang('not_approve_text');
         }
 	}
 

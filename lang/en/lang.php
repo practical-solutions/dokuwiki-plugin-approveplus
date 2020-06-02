@@ -6,3 +6,6 @@ $lang["msg_blocked2"]      = "This page is currently <u>blocked</u>. Only users 
 
 $lang["block_button"]      = "Block Page";
 $lang["unblock_button"]    = "Unblock Page";
+
+$lang["approve_text"]      = "Approved by: ";
+$lang["not_approve_text"]  = "<b>Unapproved version</b>";
