@@ -92,18 +92,13 @@ class action_plugin_approveplus_totalblock extends DokuWiki_Action_Plugin {
 
     # Funktion prüft, ob ein Seite blockiert ist. Modifizierte Funktion aus dem approve-Plugin
     public function blocked($id) {
-        global $INFO;
         global $conf;
-
-        if ($INFO['meta']['last_change']['sum'] == SUM_BLOCKED) return true; # current version is blocked
-        if ($INFO['meta']['last_change']['sum'] == SUM_UNBLOCKED) return false; # current version is unblocked
-
 
         # Search the revisions until a signal is found (block vs unblock)
         $count = 0;
 
         $changelog = new PageChangeLog($id);
-        $first = 0;
+        $first = -1;
         $num = 100;
         while (count($revs = $changelog->getRevisions($first, $num)) > 0) {
             foreach ($revs as $rev) {
@@ -112,7 +107,6 @@ class action_plugin_approveplus_totalblock extends DokuWiki_Action_Plugin {
                     return false; # a block was removed
                 }                
                 if ($revInfo['sum'] == SUM_BLOCKED) return true; # blockieren, da vorher keine freigegebene Fassung
-                
             }
             $first += $num;
         }
