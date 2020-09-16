@@ -18,7 +18,10 @@ class action_plugin_approveplus_replacement extends DokuWiki_Action_Plugin {
      */
     public function register(Doku_Event_Handler $controller) {
 		
-		$controller->register_hook('PLUGIN_DW2PDF_REPLACE', 'BEFORE', $this, 'replacement_before');
+        $plist = plugin_list();
+        
+        if (in_array('dw2pdf',$plist) && in_array('approve',$plist)) # Both must be installed
+            $controller->register_hook('PLUGIN_DW2PDF_REPLACE', 'BEFORE', $this, 'replacement_before');
 				
     }
     
