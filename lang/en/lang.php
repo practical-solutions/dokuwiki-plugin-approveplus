@@ -9,3 +9,15 @@ $lang["unblock_button"]    = "Unblock Page";
 
 $lang["approve_text"]      = "Approved by: ";
 $lang["not_approve_text"]  = "<b>Unapproved version</b>";
+
+$lang['admin title']       = "Approve Namespace";
+
+$lang['admin button']       = "Start approve";
+$lang['table document']     = "Document";
+$lang['table current ver']  = "Current Version";
+$lang['table current date'] = "Current Date";
+$lang['table approve date'] = "Approve Date";
+$lang['table approver']     = "Approve";
+$lang['table diff']         = "Difference";
+$lang['table approve']      = "Approve";
+$lang['table all']          = "all";

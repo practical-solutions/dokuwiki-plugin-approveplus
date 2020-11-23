@@ -3,7 +3,8 @@
  * Approve Plus
  * 
  * Requires: Approve-Plugin, Sqlite-Plugin
- *
+ * 
+ * @license: GPL2
  * @author: Gero Gothe <practical@medizin-lernen.de>
  * 
  */

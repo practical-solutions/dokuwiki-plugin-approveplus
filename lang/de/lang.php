@@ -9,3 +9,16 @@ $lang["unblock_button"]    = "Seitenblockade aufheben";
 
 $lang["approve_text"]      = "Freigabe: ";
 $lang["not_approve_text"]  = "<b>Nicht freigegebene Fassung!</b>";
+
+$lang['admin title']       = "Namensraum freigeben";
+
+$lang['admin button']       = "Freigabe starten";
+$lang['table document']     = "Dokument";
+$lang['table current ver']  = "Aktuelle Version";
+$lang['table current date'] = "Aktuelles Datum";
+$lang['table approve date'] = "Geprüftes Datum";
+$lang['table approver']     = "Geprüft von";
+$lang['table diff']         = "Unterschiede";
+$lang['table approve']      = "Freigeben";
+$lang['table all']          = "alle";
+

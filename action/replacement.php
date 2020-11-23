@@ -2,7 +2,7 @@
 /**
  * Approve Plus
  *
- * @license    MIT
+ * @license    GPL2
  * @author     Gero Gothe <practical@medizin-lernen.de>
  */
 

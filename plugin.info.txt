@@ -1,7 +1,7 @@
 ﻿base   approveplus
 author Gero Gothe
 email  practical@medizin-lernen.de
-date   2020-09-16
+date   2020-11-23
 name   Approve Plus
-desc   Adds additional options for the Approve-Plugin (requires Approve-Plugin). [2020-09-16]
+desc   Adds additional options for the Approve-Plugin (requires Approve-Plugin). Batch approval of namesspaces possible.
 url    https://github.com/practical-solutions/dokuwiki-plugin-approveplus

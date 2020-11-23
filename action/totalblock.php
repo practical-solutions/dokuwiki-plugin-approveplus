@@ -5,6 +5,7 @@
  * Requires: Approve-Plugin, Sqlite-Plugin
  *
  * @author: Gero Gothe <practical@medizin-lernen.de>
+ * @license: GPL2
  * 
  */
 
