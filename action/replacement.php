@@ -51,9 +51,16 @@ class action_plugin_approveplus_replacement extends DokuWiki_Action_Plugin {
         if ($approve['approved']) {
             global $auth;
             $data = $auth->getUserData($approve['approved_by']);
-            $event->data['replace']['@APPROVER@'] = $this->getLang('approve_text') . $data['name'];
+            $event->data['replace']['@APPROVER@'] = $data['name'];
+			$event->data['replace']['@APPROVE_DATE@'] = date('m / Y', strtotime($approve['approved']));
+			$event->data['replace']['@REVISION@'] = $approve['version'];
+			$data = $auth->getUserData($approve['ready_for_approval_by']);
+			$event->data['replace']['@RFA@'] = $data['name'];
         } else {
             $event->data['replace']['@APPROVER@'] = $this->getLang('not_approve_text');
+			$event->data['replace']['@APPROVE_DATE@'] = $this->getLang('DATE_text');
+			$event->data['replace']['@REVISION@'] = $this->getLang('REVISION_text');
+			$event->data['replace']['@RFA@'] = $this->getLang('RFA_text');
         }
 	}
 
